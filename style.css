@@ -5,8 +5,8 @@ background-color: #cfcece;
 
 #camera
 {
-    width:450px;
-    height: 335px;
+    width:350px;
+    height: 235px;
     border:1px solid rgb(0, 0, 0);
 }
 
@@ -62,13 +62,35 @@ h3
     box-shadow: 2px 2px 6px 5px rgba(113, 113, 113, 0.642);
 }
 
-.column
+#img1
 {
     display: inline;
     padding: 10px;
 }
 
-img:hover
+#img2
+{
+    display: inline;
+    padding: 10px;
+}
+
+#img3
+{
+    display: inline;
+    padding: 10px;
+}
+
+#img1:hover
+{
+    border-radius: 140px;
+}
+
+#img2:hover
+{
+    border-radius: 140px;
+}
+
+#img3:hover
 {
     border-radius: 140px;
 }

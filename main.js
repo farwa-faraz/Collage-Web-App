@@ -9,8 +9,8 @@ function start()
 
 camera = document.getElementById("camera");
 Webcam.set({
-    width:260,
-    height:250,
+    width:560,
+    height:350,
     image_format: "png",
     png_quality:90
 });
@@ -65,15 +65,15 @@ function Snapshot()
     console.log(img);
     Webcam.snap(function(data_uri){
         if(img=="img1"){
-            document.getElementById("result1").innerHTML = '<img id="selfie1" src="'+data_uri+'"/>'; 
+            document.getElementById("result1").innerHTML = '<img id="img1" src="'+data_uri+'"/>'; 
         }
 
         if(img=="img2"){
-            document.getElementById("result2").innerHTML = '<img id="selfie2" src="'+data_uri+'"/>'; 
+            document.getElementById("result2").innerHTML = '<img id="img2" src="'+data_uri+'"/>'; 
         }
 
         if(img=="img3"){
-            document.getElementById("result3").innerHTML = '<img id="selfie3" src="'+data_uri+'"/>'; 
+            document.getElementById("result3").innerHTML = '<img id="img3" src="'+data_uri+'"/>'; 
         }
     });
 }
